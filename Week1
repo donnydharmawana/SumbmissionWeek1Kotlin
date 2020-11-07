@@ -1,7 +1,59 @@
+//Latihan 1
 fun main() {
     nama("Donny","Dharmawan")
 }
 
 fun nama(pertama:String? = null, kedua:String? = null){
     println("$pertama $kedua")
+}
+
+//Latihan 2
+fun main() {
+    genap(arrayOf(1,2,3,4,5,6,7,8,9,10))
+}
+fun genap(values:Array<Int>){
+    for(values in values){
+        if(values % 2==0){
+            println(values)
+        }else{
+            
+        }
+    }
+}
+
+//Latihan 3
+fun main(args:Array<String>) {
+    
+    var Tempat = arrayOf("Udacoding","tempat 2","tempat 3","tempat 4","tempat 5")
+    
+    for (item in Tempat.indices){
+        if(item % 5 == 0)
+        println(Tempat[item])
+    }
+println("nah ini belajar coding yang keren")
+
+}
+
+//Latihan 4
+fun main(args:Array<String>) {
+    var nilai: Int = 90
+    var grade: String = ""
+    
+    when (nilai){
+        in 90..100 -> grade = "Terpuji"
+        in 80..90 -> grade = "Sangat Memuaskan"
+        in 60..80 -> grade = "Memuaskan"
+        in 1..60 -> grade = "Tidak Lulus"
+        else ->grade = "Nilai Tidak Valid"
+    }
+    println("Anda mendapatkan nilai:$grade")
+}
+
+//Latihan 5
+
+fun main(args:Array<String>) {
+    val kota = arrayOf("jakarta","jakarta","Padang","Padang","Solo","Bandung","Malang","Bali")
+    
+    for(i in kota.toSet())
+    println("$i : ${kota.count{it == i}}")
 }
