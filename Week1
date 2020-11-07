@@ -1,0 +1,7 @@
+fun main() {
+    nama("Donny","Dharmawan")
+}
+
+fun nama(pertama:String? = null, kedua:String? = null){
+    println("$pertama $kedua")
+}
