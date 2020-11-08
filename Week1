@@ -1,10 +1,11 @@
 //Latihan 1
 fun main() {
-    nama("Donny","Dharmawan")
+    val nilaidouble = showValue(50.0, 30.0)
+    println(nilaidouble)
 }
-
-fun nama(pertama:String? = null, kedua:String? = null){
-    println("$pertama $kedua")
+fun showValue(nilai1:Double, nilai2: Double):String = """
+    Nilai 1 : $nilai1
+    Nilai 2 : $nilai2
 }
 
 //Latihan 2
