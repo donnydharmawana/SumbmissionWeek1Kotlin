@@ -3,10 +3,9 @@ fun main() {
     val nilaidouble = showValue(50.0, 30.0)
     println(nilaidouble)
 }
-fun showValue(nilai1:Double, nilai2: Double):String = """
-    Nilai 1 : $nilai1
-    Nilai 2 : $nilai2
-}
+fun showValue(nilai1:Double, nilai2: Double):String {
+      return "nilai pertama : ${nilai1}, nilal kedua ${nilai2}"
+    }
 
 //Latihan 2
 fun main() {
